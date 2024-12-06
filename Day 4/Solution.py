@@ -5,7 +5,6 @@ with open("text.txt", "r") as file:
 for line in arr:
   print("".join(line))
 
-sumsumsumsum = 0
 
 
 #horizontal back and forwards
@@ -13,7 +12,7 @@ onedarray = [x for i in arr for x in i]
 print(onedarray)
 onedarray = ''.join(onedarray)
 print(onedarray)
-print(f"horizontal count = {onedarray.count('XMAX')}")
+print(f"horizontal count = {onedarray.count('XMAS')}")
 onedarray = onedarray[::-1]
 print(f"backwards count = {onedarray.count('XMAS')}")
 
@@ -62,4 +61,4 @@ def diagonally(arr):
             temp = temp[::-1]
             count += temp.count("XMAS")
     return count
-print(diagonally(arr))
+print(f"diagonally: {diagonally(arr)}")
